@@ -28,10 +28,11 @@ html, body{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.450);
+  
+  transform: translate(-50%, -50%);
   
   transition: width .3s, height .3s;
   transition-timing-function: ease;
@@ -59,11 +60,36 @@ div{
 }
 .field-email, .field-password{
   background-color: var(--default-color);
+  
+  border: 2px solid var(--default-color);
   margin: 5px 0px;
   width: 100%;
   display: block;
   height: 40px;
   border-radius: 5px;
+}
+.field-email > label > i, .field-password > label > i{
+  
+  color: #fff;
+  font-size: 2em;
+  padding: 8px;
+  width: 40px;
+  transform: translateY(-5px);
+}
+input{
+  background-color: #94cfcd;
+  font-size: 1em;
+  width: calc(100% - 44px);
+  height: 100%;
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: text;
+  outline: none;
+  transform: translateY(-16px);
+}
+input:focus-within{
+  background-color: #fff;
 }
 .field-btn > button{
   display: block;
