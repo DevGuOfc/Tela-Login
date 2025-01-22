@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+:root{
+  --deg-color: #49a09d;
+  --deg-color-2: #5f2c82;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+  
+  body{
+    background: linear-gradient(to top, var(--deg-color), var(--deg-color-2));
+  }
+  .content{
+    width: 80vw;
+  }
+  .content > .img-login{
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+  .content > .form-login{
+    float: right;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px){
+  body{
+    background: linear-gradient(to top, var(--deg-color-2) var(--deg-color));
+  }
+  .content{
+    width: 950px;
+  }
+  .content > .img-login{
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  .content > .form-login{
+    float: right;
+    width: 50%;
+  }
+}
